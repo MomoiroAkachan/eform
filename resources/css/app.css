@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.e-link{
+    @apply text-gray-600 font-medium decoration-sky-700 underline underline-offset-4 cursor-pointer hover:font-semibold transition-all hover:text-gray-800; 
+    font-family: 'Roboto', serif;
+}
+
+.page-bg{
+    @apply bg-red-500 w-full h-full;
+    background-image: url('https://img.freepik.com/premium-vector/school-office-stationery-seamless-pattern-items-learning-work-repeat-background_514903-1169.jpg');
+}
