@@ -5,22 +5,22 @@
     'class' => '',
     'rgx' => '',
     'liop' => [],
+    'kind' => '',
 ])
 
-@if ($type == 'datalist')
-    <fieldset class="frm-field {{ $class }}">
-        <input class="frm-input w-full" type="text" name="{{ $id }}" id="{{ $id }}" required placeholder="" rgx='{{ $rgx }}' list='{{ $id }}_list' />
-        <label for="{{ $id }}" class="frm-label" for="test">{{ $placeholder }}</label>
 
+<fieldset class="frm-field {{ $class }}">
+    <input class="frm-input w-full" type="{{ ($type != 'datalist' ? $type : 'text') }}" name="{{ $id }}" id="{{ $id }}"
+        {{ $kind == 'unholy' ? '' : 'required' }} placeholder="" rgx='{{ $rgx }}'
+        {{ $type == 'datalist' ? 'list="' . $id . '_list"' : '' }} />
+
+    <label for="{{ $id }}" class="frm-label" for="test">{{ $placeholder }}</label>
+
+    @if ($type == 'datalist')
         <datalist id="{{ $id }}_list">
-            @foreach ( $liop as $li )
-                <option value="{{ $li }}"/>
+            @foreach ($liop as $li)
+                <option value="{{ $li }}">{{ $li }}</option>
             @endforeach
         </datalist>
-    </fieldset>
-@else
-    <fieldset class="frm-field {{ $class }}">
-        <input class="frm-input w-full" type="{{ $type }}" name="{{ $id }}" id="{{ $id }}" required placeholder="" rgx='{{ $rgx }}' />
-        <label for="{{ $id }}" class="frm-label" for="test">{{ $placeholder }}</label>
-    </fieldset>
-@endif
+    @endif
+</fieldset>
