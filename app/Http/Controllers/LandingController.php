@@ -10,4 +10,7 @@ class LandingController extends Controller
     public function index(): View{
         return view('landing.index');
     }
+    public function comingSon(): View{
+        return view('landing.coming');
+    }
 }
