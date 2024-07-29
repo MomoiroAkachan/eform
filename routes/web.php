@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(LandingController::class)->group(function () {
     Route::get('/', 'index')->name('home');
-    Route::get('/coming', 'comingSon')->name('comingSoon');
+    Route::get('/coming', 'comingSoon')->name('comingSoon');
 });
 
 Route::controller(FormController::class)->group(function () {
