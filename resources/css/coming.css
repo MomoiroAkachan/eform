@@ -1,0 +1,10 @@
+@import 'app.css';
+
+*{
+    font-family: 'Rawline', Arial, Helvetica, sans-serif;
+}
+
+.background{
+    @apply bg-sky-200 flex w-full h-full relative items-center;
+}
+

@@ -1,21 +1,43 @@
 @extends('layout.base')
-@section('description', 'Página inicial do site de formulários para cadastro de alunos nas escola públicas de Teófilo
+@section('description',
+    'Página inicial do site de formulários para cadastro de alunos nas escola públicas de Teófilo
     Otoni')
 @section('title', 'Em breve')
-
+@vite(['resources/css/coming.css'])
 @section('content')
-    <div class="bg-[#f7ebe6] w-full h-full flex items-center justify-center">
-        <div
-            class="background max-w-[90%] flex items-center justify-center flex-col px-6 bg-[#3d200c28] self-center rounded-md drop-shadow-2xl pb-8 border border-[#1235]">
-            <h1 style="font-family: 'Poetsen One', sans-serif"
-                class="title text-[#4F1787] text-[4.5rem] uppercase leading-tight  font-medium text-center mt-7 mb-2">Mais Em breve</h1>
-            <p class="text text-[#7a334d] text-center text-base">Formulário disponível dia <strong>1 de agosto</strong> de 2024 NESTE MESMO SITE</p>
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/02d69eaa-c960-49d3-8695-6b23cdc3500a/zXq2NcVJYe.json" background="#00000000" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player>
-            <div class="info-context text-sm text-justify gap-5 gap-x-6 text-[#180161] font-['Roboto']">
-                <div class="it1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi labore, omnis eius illum vitae deleniti cupiditate asperiores magni voluptatum a unde consequatur ratione nemo deserunt. Optio ratione odit delectus.</div>
-                <div class="it2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque, doloribus asperiores, deleniti, rerum dolor</div>
-                <div class="it3">eveniet modi quaerat sunt consectetur ipsam facilis omnis dolorum recusandae totam praesentium molestias ratione.</div>
+    <div class="background">
+        <div class="w-full h-fit relative flex flex-col items-center gap-2">
+            <div
+                class="rounded-full bg-indigo-800 uppercase text-indigo-50 py-1 px-6 md:py-3 md:tracking-wide md:px-10 text-center md:text-2xl lg:text-3xl font-[900] z-20 w-fit h-fit text-lg relative">
+                <h2 class="relative">Prefeitura Municipal de Teófilo Otoni</h2>
             </div>
+            <div
+                class="rounded-full bg-white uppercase md:text-6xl md:drop-shadow-2xl md:pb-6 md:-top-6 md:pt-7 lg:text-7xl text-red-600 pb-2.5 px-8 pt-3.5 font-[900] z-10 drop-shadow-md tracking-wider w-fit h-fit text-4xl relative -top-4">
+                <h2 class="relative">Cadastro Escolar</h2>
+            </div>
+
+            <div class="text-violet-900 text-4xl md:mt-8 font-[900] lg:text-7xl">
+                <h2>2024</h2>
+            </div>
+            <div class="text-red-600 text-3xl md:mt-8 font-[900] uppercase lg:text-6xl">
+                <h2>Educação infantil</h2>
+            </div>
+            <div class="rounded-[100%] text-2xl md:mt-10 md:p-16 md:py-20 md:text-4xl bg-white max-w-[500px] w-[50%] text-red-600 font-[900] text-center flex flex-col items-center p-10 mt-8"
+                style="box-shadow: 3px 3px 0 0 rgba(10, 50, 150, 1);">
+                <h4 class="text-base lg:text-lg font-bold text-indigo-800">(Alunos de 0 a 5 anos)</h4>
+                <h4 class='uppercase lg:text-4xl lg:max-w-[75%] leading-[1] mt-2'><span class='text-violet-700'>01</span> à <span class='text-violet-700'>31</span> de Agosto de 2024.</h4>
+            </div>
+            <div class="max-w-[75%] mt-8 flex flex-row items-center justify-center text-center gap-8">
+                <div class="text-xl max-w-[40%] font-[900] tracking-wider text-violet-900  lg:bg-red-400 uppercase">
+                    <h3>Secretaria de Educação</h3>
+                </div>
+                <img class="h-[85px]" src="{{ asset('/img/pref-logo.png') }}"
+                    alt="Logotipo da Prefeitura Municipal de Teófilo Otoni">
+            </div>
+        </div>
+        <div class="w-full absolute bottom-0 left-0 h-[30%] lg:h-[35%] flex flex-row justify-between items-baseline filter saturate-[.7] lg:px-[8%] 2xl:px-[15%]">
+            <img src="{{ asset('/img/c2.png') }}" alt="Criança segurando o caderno contra sua barriga." class="h-full">
+            <img src="{{ asset('/img/c1.png') }}" alt="Criança segurando o caderno contra sua barriga." class="h-full">
         </div>
     </div>
 @endSection
