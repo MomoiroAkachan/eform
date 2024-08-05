@@ -38,10 +38,10 @@
                 <img src="{{ asset('img/logo-prefeitura.png') }}" alt="Logotipo da prefeitura" class="h-[5rem] md:h-[8rem] lg:h-[7rem]">
             </div>
         </div>
+
         <div class="md:h-[10%]"></div>
     </div>
-</div>
-
-<div class="footer">
+    <div class="footer">
+    </div>
 </div>
 @endSection

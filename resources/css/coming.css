@@ -11,13 +11,13 @@ body{
 
 .bg{
     @apply w-full h-full bg-amber-100 fixed overflow-auto;
-    background-image: url('/../public/img/coming-bg.jpg');
+    background-image: url('/resources/img/bg_coming.jpg');
     background-repeat: repeat;
     backdrop-filter: saturate(10%);
     background-size: contain;
 }
 .context {
-    @apply  w-full relative flex flex-col items-center justify-start max-w-[90%] mx-auto h-[100%] box-content lg:max-w-[65%];
+    @apply  w-full relative flex flex-col items-center justify-start max-w-[90%] mx-auto h-[90%] box-content lg:max-w-[65%];
 }
 .title{
     @apply w-fit h-fit text-justify leading-none mt-[15%] md:mt-[8%] mb-[3rem];
@@ -53,8 +53,8 @@ body{
 }
 
 .footer{
-    @apply w-full h-[10%] bottom-0 mt-3 fixed;
-    background-image: url('/../public/img/foot.png');
+    @apply w-full h-[10%] bottom-0 mt-auto;
+    background-image: url('/resources/img/pencil_footer.png');
     background-repeat: repeat-x;
     background-position: top left;
     background-clip: content-box;
