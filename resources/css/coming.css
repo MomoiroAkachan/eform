@@ -5,6 +5,10 @@
     font-family: "Rawline", Arial, Helvetica, sans-serif;
 }
 
+body{
+    @apply box-content;
+}
+
 .bg{
     @apply w-full h-full bg-amber-100 fixed overflow-auto;
     background-image: url('/../public/img/coming-bg.jpg');
@@ -13,29 +17,29 @@
     backdrop-filter: saturate(10%);
 }
 .context {
-    @apply w-full relative flex flex-col items-center justify-center pt-[10%] max-w-[90%] mx-auto h-fit;
+    @apply w-full relative flex flex-col items-center max-w-[90%] mx-auto h-[100%] mb-[35%] box-content;
 }
 .title{
-    @apply w-fit h-full text-justify leading-none;
+    @apply w-fit h-fit text-justify leading-none mt-[15%];
 }
 .title > h1:nth-of-type(1)
 {
-    @apply text-[40px] md:text-[70px] uppercase font-extrabold leading-none tracking-widest;
+    @apply text-[3.2rem] md:text-[6rem] lg:text-[8rem] uppercase font-extrabold leading-none tracking-widest;
     font-family: 'Black Han Sans', "Poetsen One", Helvetica, sans-serif;
     color: rgb(255, 224, 85);
     text-shadow:  -4px 3px #161718;
 }
 .title > h1:nth-of-type(2)
 {
-    @apply text-[27px] md:text-[46px] uppercase font-semibold leading-none tracking-tighter;
+    @apply text-[2.1rem] md:text-[3.95rem] lg:text-[5.3rem] uppercase font-semibold leading-none tracking-tighter;
     font-family: "Rawline", Helvetica, sans-serif;
     color: #161718;
 }
 .subtitle{
-    @apply w-fit h-fit mt-[8%] bg-[#c92424] px-3 flex flex-col items-center justify-center rounded-full p-2;
+    @apply w-fit h-fit mt-[15%] bg-[#c92424] px-3 flex flex-col items-center justify-center rounded-full p-2;
 }
 .subtitle > h1{
-    @apply font-semibold text-right flex-nowrap text-[15px] md:text-[27px] md:px-4 md:py-1 text-[#ffffff] lg:text-[3rem] capitalize leading-none;
+    @apply font-semibold text-right flex-nowrap text-[1.3rem] px-3 tracking-wide md:text-[27px] md:px-4 md:py-1 text-[#ffffff] lg:text-[3rem] capitalize leading-none;
     font-family: "Rawline", Arial, Helvetica, sans-serif;
 }
 
@@ -43,13 +47,15 @@
     @apply w-[75%] h-fit max-w-[750px] mx-auto;
 }
 .ratio{
-    font-family: "Rawline", Arial, Helvetica, sans-serif;
-    @apply my-[8rem] text-[1.2rem] md:text-[2rem] font-semibold text-[#f55236] text-center lg:text-[3rem];
+    /* font-family: "Rawline", Arial, Helvetica, sans-serif; */
+    @apply  text-[1rem] md:text-[2rem] py-0.5 md:py-1 md:px-5 bg-[#ffe342] px-2 absolute left-1/2 -translate-x-1/2 shadow-md w-full rounded-full z-[100] max-w-[95%] md:-top-5 -top-2 text-[#1d1d1d] text-center font-semibold;
 }
 .footer{
-    @apply w-full h-[150px] absolute bottom-0 mt-3;
+    @apply w-full h-[10%] bottom-0 mt-3 fixed;
     background-image: url('/../public/img/foot.png');
     background-repeat: repeat-x;
-    background-position: bottom;
-    background-size: cover 0;
+    background-position: top left;
+    background-clip: content-box;
+    background-origin: padding-box;
+    background-size: auto 100%;
 }

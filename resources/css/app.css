@@ -7,20 +7,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Configurações relativas à base da página */
-html {
-    width: 100%;
-    height: 100%;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    @apply w-full h-full;
-}
-
 /* Elemento Básicos */
 .e-link {
     @apply text-gray-600 font-medium decoration-sky-700 underline underline-offset-4 cursor-pointer hover:font-semibold transition-all hover:text-gray-800;
