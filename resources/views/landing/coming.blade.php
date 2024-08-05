@@ -30,9 +30,13 @@
             </div>
         </div>
 
-        <div class="realization mt-[15%] flex flex-col items-center justify-center max-h-[20%]">
-            <h5 class='font-bold text-[1rem] md:text-[1.7rem]'>Realização:</h5>
-            <img src="{{ asset('img/logo-prefeitura.png') }}" alt="Logotipo da prefeitura" class="h-[8rem] md:h-[8rem]">
+        <div class="realization mt-[15%] flex flex-col items-center justify-center max-h-[20%] uppercase">
+            <h5 class='font-[700] md:font-[900] text-[1rem] md:text-[2rem]'>Realização:</h5>
+            <div class="flex flex-row gap-[10%] items-center justify-center mt-[5%]">
+                <span class="max-w-[40%] font-[800] md:font-[900] uppercase text-center text-[0.8rem] md:text-2xl text-slate-700">Secretaria de Educação</span>
+                <span class="font-[600] text-red-500">&</span>
+                <img src="{{ asset('img/logo-prefeitura.png') }}" alt="Logotipo da prefeitura" class="h-[5rem] md:h-[8rem]">
+            </div>
         </div>
     </div>
 </div>
