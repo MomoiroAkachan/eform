@@ -1,21 +1,42 @@
 @extends('layout.base')
-@section('description', 'Página inicial do site de formulários para cadastro de alunos nas escola públicas de Teófilo
-    Otoni')
+@section('description', 'Sala de espera para a abertura do formulário de Cadastro')
 @section('title', 'Em breve')
-
+@section('styles')
+@vite(['resources/css/coming.css'])
+@endSection
 @section('content')
-    <div class="bg-[#f7ebe6] w-full h-full flex items-center justify-center">
-        <div
-            class="background max-w-[90%] flex items-center justify-center flex-col px-6 bg-[#3d200c28] self-center rounded-md drop-shadow-2xl pb-8 border border-[#1235]">
-            <h1 style="font-family: 'Poetsen One', sans-serif"
-                class="title text-[#4F1787] text-[4.5rem] uppercase leading-tight  font-medium text-center mt-7 mb-2">Mais Em breve</h1>
-            <p class="text text-[#7a334d] text-center text-base">Formulário disponível dia <strong>1 de agosto</strong> de 2024 NESTE MESMO SITE</p>
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/02d69eaa-c960-49d3-8695-6b23cdc3500a/zXq2NcVJYe.json" background="#00000000" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player>
-            <div class="info-context text-sm text-justify gap-5 gap-x-6 text-[#180161] font-['Roboto']">
-                <div class="it1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi labore, omnis eius illum vitae deleniti cupiditate asperiores magni voluptatum a unde consequatur ratione nemo deserunt. Optio ratione odit delectus.</div>
-                <div class="it2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque, doloribus asperiores, deleniti, rerum dolor</div>
-                <div class="it3">eveniet modi quaerat sunt consectetur ipsam facilis omnis dolorum recusandae totam praesentium molestias ratione.</div>
+<div class="bg">
+    <div class="context">
+
+        <div class="title">
+            <h1>Cadastro</h1>
+            <h1 style='text-shadow: 0 0 0.3rem #2227;'>escolar 2024/2025</h1>
+        </div>
+
+        <div class="subtitle">
+            <h1>educação infantil</h1>
+        </div>
+
+        <div class="infos">
+            <div class="ratio">
+                <h4>Para crianças de 0 a 5 anos</h4>
+            </div>
+
+            <div class="book">
+                <h3>Cadastro disponível a partir do dia</h3>
+                <h3>
+                    <span class='font-bold'>20/08</span> até <span class='font-bold'>20/09</span> de 2024
+                </h3>
             </div>
         </div>
+
+        <div class="realization mt-[15%] flex flex-col items-center justify-center max-h-[20%]">
+            <h5 class='font-bold text-[1rem] md:text-[1.7rem]'>Realização:</h5>
+            <img src="{{ asset('img/logo-prefeitura.png') }}" alt="Logotipo da prefeitura" class="h-[8rem] md:h-[8rem]">
+        </div>
     </div>
+</div>
+
+<div class="footer">
+</div>
 @endSection

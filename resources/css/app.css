@@ -1,25 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.cdnfonts.com/css/rawline');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Configurações relativas à base da página */
-html {
-    width: 100vw;
-    height: 100vh;
-    font-family: "Roboto", sans-serif;
-    scroll-behavior: smooth;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    @apply w-full h-full;
-}
 
 /* Elemento Básicos */
 .e-link {
@@ -37,74 +23,4 @@ body {
 
 .e-group .title{
   @apply text-slate-600 absolute -top-3.5 left-[50%] text-sm translate-x-[-50%] bg-white px-1;
-}
-
-/* Página Inicial */
-.page-bg {
-    @apply absolute top-0 left-0 w-full h-full overflow-scroll;
-    background-image: url("https://img.freepik.com/premium-vector/school-office-stationery-seamless-pattern-items-learning-work-repeat-background_514903-1169.jpg");
-    background-size: 75%;
-    background-repeat: repeat;
-}
-.card{
-  @apply relative py-[10%] px-2.5 bg-white max-w-[90%] mx-auto mt-[15%] overflow-y-auto rounded-md shadow-lg border-b border-gray-400;
-}
-.card h3{
-  @apply text-2xl text-slate-800 text-center mb-4 uppercase font-semibold;
-}
-
-
-
-.frm-field {
-    @apply relative py-2;
-    font: "Roboto", sans-serif;
-}
-.frm-field .frm-label {
-    @apply absolute left-3 top-4 cursor-text select-none px-1 font-normal text-slate-500;
-    font-size: 1rem;
-    line-height: 1.2rem;
-    transition: all 0.3s ease;
-}
-.frm-field .frm-input {
-    @apply cursor-text rounded border border-gray-400 px-3 py-1.5 text-slate-800;
-    font-size: 1rem;
-
-    transition: outline-width 0.1s ease-in-out;
-}
-
-.frm-field .frm-input::placeholder {
-    content: "";
-}
-.frm-field .frm-input:required:placeholder-shown + .frm-label::after {
-    @apply ml-1 cursor-text text-red-500;
-    content: "*";
-}
-.frm-field .frm-input:focus {
-    @apply border-blue-600 outline outline-4;
-    outline-color: #38a8;
-}
-.frm-field .frm-input:focus + .frm-label,
-.frm-field .frm-input:not(:placeholder-shown) + .frm-label {
-    @apply font-bold text-slate-700;
-    top: -3px;
-    font-size: 0.85rem;
-    background-color: white;
-}
-
-.info-context{
-    display: grid;
-
-    grid-template-areas:
-    "it1 it1"
-    "it2 it3";
-}
-.it1{
-    grid-area: it1;
-}
-.it2{
-    grid-area: it2;
-}
-.it3{
-    grid-area: it3;
-
 }
