@@ -20,7 +20,7 @@ body{
     @apply  w-full relative flex flex-col items-center justify-start max-w-[90%] mx-auto h-[100%] box-content lg:max-w-[65%];
 }
 .title{
-    @apply w-fit h-fit text-justify leading-none mt-[15%] mb-[3rem];
+    @apply w-fit h-fit text-justify leading-none mt-[15%] md:mt-[8%] mb-[3rem];
 }
 .title > h1:nth-of-type(1)
 {
@@ -43,7 +43,7 @@ body{
     font-family: "Rawline", Arial, Helvetica, sans-serif;
 }
 .infos{
-    @apply relative mt-[25%] max-w-[80%] mx-auto max-h-[40%];
+    @apply relative mt-[25%] md:mt-[8%] max-w-[80%] mx-auto max-h-[40%];
 }
 .ratio{
     @apply  text-[1rem] md:text-[1.5rem] py-0.5 md:py-1 md:px-5 bg-[#ffe342] px-2 absolute left-1/2 -translate-x-1/2 shadow-md w-full rounded-full z-[100] max-w-[95%] md:-top-5 -top-2 text-[#1d1d1d] text-center font-semibold;
