@@ -18,7 +18,7 @@ class SiteAcess
      */
     public function handle(Request $request, Closure $next): Response | Redirector | RedirectResponse
     {
-        if(Route::currentRouteName() != 'coming' && now()->lessThan('2024-08-15 00:00:00'))
+        if(Route::currentRouteName() != 'coming' && now()->lessThan('2024-08-20 00:00:00'))
             return redirect()->route('coming');
         return $next($request);
     }

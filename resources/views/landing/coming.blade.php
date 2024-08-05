@@ -1,43 +1,40 @@
 @extends('layout.base')
-@section('description',
-    'Página inicial do site de formulários para cadastro de alunos nas escola públicas de Teófilo
-    Otoni')
+@section('description', 'Sala de espera para a abertura do formulário de Cadastro')
 @section('title', 'Em breve')
-@vite(['resources/css/coming.css'])
+@section('styles')
+    @vite(['resources/css/coming.css'])
+@endSection
 @section('content')
-    <div class="background">
-        <div class="w-full h-fit relative flex flex-col items-center gap-2">
-            <div
-                class="rounded-full bg-indigo-800 uppercase text-indigo-50 py-1 px-6 md:py-3 md:tracking-wide md:px-10 text-center md:text-2xl lg:text-3xl font-[900] z-20 w-fit h-fit text-lg relative">
-                <h2 class="relative">Prefeitura Municipal de Teófilo Otoni</h2>
+    <div class="bg">
+        <div class="context">
+            <div class="title">
+                <h1>Cadastro</h1>
+                <h1 style='text-shadow: 0 0 3px #2227;'>escolar 2024/2025</h1>
             </div>
-            <div
-                class="rounded-full bg-white uppercase md:text-6xl md:drop-shadow-2xl md:pb-6 md:-top-6 md:pt-7 lg:text-7xl text-red-600 pb-2.5 px-8 pt-3.5 font-[900] z-10 drop-shadow-md tracking-wider w-fit h-fit text-4xl relative -top-4">
-                <h2 class="relative">Cadastro Escolar</h2>
+            <div class="subtitle">
+                <h1>educação infantil</h1>
             </div>
 
-            <div class="text-violet-900 text-4xl md:mt-8 font-[900] lg:text-7xl">
-                <h2>2024</h2>
-            </div>
-            <div class="text-red-600 text-3xl md:mt-8 font-[900] uppercase lg:text-6xl">
-                <h2>Educação infantil</h2>
-            </div>
-            <div class="rounded-[100%] text-2xl md:mt-10 md:p-16 md:py-20 md:text-4xl bg-white max-w-[500px] w-[50%] text-red-600 font-[900] text-center flex flex-col items-center p-10 mt-8"
-                style="box-shadow: 3px 3px 0 0 rgba(10, 50, 150, 1);">
-                <h4 class="text-base lg:text-lg font-bold text-indigo-800">(Alunos de 0 a 5 anos)</h4>
-                <h4 class='uppercase lg:text-4xl lg:max-w-[75%] leading-[1] mt-2'><span class='text-violet-700'>01</span> à <span class='text-violet-700'>31</span> de Agosto de 2024.</h4>
-            </div>
-            <div class="max-w-[75%] mt-8 flex flex-row items-center justify-center text-center gap-8">
-                <div class="text-xl max-w-[40%] font-[900] tracking-wider text-violet-900  lg:bg-red-400 uppercase">
-                    <h3>Secretaria de Educação</h3>
+            <div class="infos relative mt-[8.5rem] max-w-[80%] mx-auto">
+                <div
+                    class="date text-[12px] md:text-[19px] py-0.5 md:py-1 md:px-5 bg-[#ffe342] px-2 relative rounded-full z-[100] text-[#1d1d1d] text-center font-semibold mx-4">
+
+                    <h4>Para crianças de 0 a 5 anos</h4>
                 </div>
-                <img class="h-[85px]" src="{{ asset('/img/pref-logo.png') }}"
-                    alt="Logotipo da Prefeitura Municipal de Teófilo Otoni">
+                <div class="ctt shadow-md bg-white px-5 z-[10] relative -top-5 py-7 rounded-md text-center">
+                    <h3>Cadastro disponível a partir do dia</h3>
+                    <h3>
+                        <span class='font-bold'>20/08</span> até <span class='font-bold'>20/09</span> de 2024
+                    </h3>
+                </div>
+            </div>
+            <div class="realization mt-[4rem] flex flex-col items-center justify-center">
+                <h5 class='font-bold text-[1.3rem]'>Realização:</h5>
+                <img src="{{ asset('img/logo-prefeitura.png') }}" alt="Logotipo da prefeitura" width="75px">
             </div>
         </div>
-        <div class="w-full absolute bottom-0 left-0 h-[30%] lg:h-[35%] flex flex-row justify-between items-baseline filter saturate-[.7] lg:px-[8%] 2xl:px-[15%]">
-            <img src="{{ asset('/img/c2.png') }}" alt="Criança segurando o caderno contra sua barriga." class="h-full">
-            <img src="{{ asset('/img/c1.png') }}" alt="Criança segurando o caderno contra sua barriga." class="h-full">
+
+        <div class="footer">
         </div>
     </div>
 @endSection
