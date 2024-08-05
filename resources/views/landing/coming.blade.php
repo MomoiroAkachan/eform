@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <div class="realization mt-[8%] flex flex-col items-center uppercase lg:fixed lg:m-0 lg:right-0 lg:bottom-[15%]">
+        <div class="realization 2xl:left-1/2 2xl:-translate-x-1/2 mt-[8%] flex flex-col items-center uppercase lg:fixed lg:m-0 lg:right-0 lg:bottom-[15%]">
             <h5 class='font-[700] md:font-[900] text-[1rem] md:text-[1.5rem]'>Realização:</h5>
             <div class="flex flex-row gap-[10%] items-center justify-center mt-[5%] lg:mt-0">
                 <span class="max-w-[40%] font-[800] md:font-[900] uppercase text-center text-[0.8rem] md:text-2xl lg:text-xl text-slate-700">Secretaria de Educação</span>
@@ -42,6 +42,8 @@
         <div class="md:h-[10%]"></div>
     </div>
     <div class="footer">
+        <img src="{{ asset('img/hands.png') }}" alt="" srcset="">
+        <img src="{{ asset('img/hands.png') }}" alt="" srcset="">
     </div>
 </div>
 @endSection

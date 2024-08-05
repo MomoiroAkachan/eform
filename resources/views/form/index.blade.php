@@ -1,7 +1,7 @@
 @extends('layout.base')
 @section('description', 'Formulários para cadastro de alunos nas escola públicas de Teófilo Otoni')
 @section('title', 'Formulário')
-
+@vite(['resources/css/form.css'])
 @section('content')
     <div class="page-bg">
         <div class="card">
@@ -52,7 +52,7 @@
                     <x-hinput id='iCell2' placeholder='Número de Telefone/Celular' type='tel' rgx='[a-zA-Z\s]+$' kind='unholy' />
                     <x-hinput id='iEmail2' placeholder='Endereço de E-mail' type='email' rgx='[a-zA-Z\s]+$' kind='unholy' />
                 </div>
-                
+
             </form>
         </div>
     </div>

@@ -11,13 +11,14 @@ body{
 
 .bg{
     @apply w-full h-full bg-amber-100 fixed overflow-auto;
-    background-image: url('/resources/img/bg_coming.jpg');
+    /*background-image: url('/resources/img/bg_coming.jpg');*/
+    background-color: rgb(204, 245, 255);
     background-repeat: repeat;
     backdrop-filter: saturate(10%);
     background-size: contain;
 }
 .context {
-    @apply  w-full relative flex flex-col items-center justify-start max-w-[90%] mx-auto h-[90%] box-content lg:max-w-[65%];
+    @apply  w-full relative flex flex-col items-center justify-start max-w-[90%] mx-auto h-[79%] box-content lg:max-w-[65%];
 }
 .title{
     @apply w-fit h-fit text-justify leading-none mt-[15%] md:mt-[8%] mb-[3rem];
@@ -53,11 +54,18 @@ body{
 }
 
 .footer{
-    @apply w-full h-[10%] bottom-0 mt-auto;
-    background-image: url('/resources/img/pencil_footer.png');
-    background-repeat: repeat-x;
-    background-position: top left;
-    background-clip: content-box;
-    background-origin: padding-box;
-    background-size: auto 100%;
+    @apply w-full h-[21%] bottom-0 mt-auto flex flex-row justify-between;
+    /*background-image: url('/resources/img/pencil_footer.png');*/
+    /*background-repeat: repeat-x;*/
+    /*background-position: top left;*/
+    /*background-clip: content-box;*/
+    /*background-origin: padding-box;*/
+    /*background-size: auto 100%;*/
+}
+.footer img:nth-of-type(2){
+    scale: -1 1;
+}
+.footer img{
+    max-width: 50%;
+    
 }
