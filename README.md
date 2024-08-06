@@ -53,10 +53,6 @@ de `APP_DEBUG=true` para `APP_DEBUG=false`
 
 8 - **SEJA FELIZ**
 
-## Instala o Sail:  
-1 - `php artisan sail:install`  
-2 - `php artisan sail:publish`
-
 ## **Resumo Dos Comandos**
 ```
 # INSTALAR DEPS
