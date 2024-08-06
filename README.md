@@ -3,9 +3,11 @@
 ## Processo a partir do github
 1 - Clone o repositório:  
     `git clone https://github.com/MomoiroAkachan/eform.git` ou `git clone git@github.com:MomoiroAkachan/eform.git`  
+    
 2 - Avance para a pasta que acabou de clonar:  
     `cd eform`  
-2 - Mude para a branch de desenvolvimento:  
+    
+3 - Mude para a branch de desenvolvimento:  
     `git checkout develop`  
 
 ## Processo a partir do Sistema operacional
