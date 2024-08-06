@@ -1,5 +1,15 @@
 # Guia
 
+## Pré requisitos
+1 - Instalar o php, suas extensões e o git:  
+`sudo apt install -y php zip unzip php-dom php-ext php-xml git`
+
+2 - Instalar o composer:  
+[SITE DO COMPOSER](https://getcomposer.org/download/)
+
+3 - Instala as dependencias do composer, para dev:  
+`composer install --dev`
+
 ## Processo a partir do github
 1 - Clone o repositório:  
     `git clone https://github.com/MomoiroAkachan/eform.git` ou `git clone git@github.com:MomoiroAkachan/eform.git`  
@@ -17,11 +27,6 @@
 2 - Alterar as variáveis do site no arquivo `.env`:  
 de `APP_ENV=local` para `APP_ENV=production`  
 de `APP_DEBUG=true` para `APP_DEBUG=false`
-
-## Executar a instalação do composer e PHP
-1 - Link: [SITE DO COMPOSER](https://getcomposer.org/download/)
-
-2 - Instala as dependencias do composer, para dev: `composer install`
 
 ## Processo a partir do sail
 1 - Iniciar o container DOCKER usando o sail:  
@@ -49,4 +54,21 @@ de `APP_DEBUG=true` para `APP_DEBUG=false`
 8 - **SEJA FELIZ**
 
 ## **Resumo Dos Comandos**
+```
+# INSTALAR DEPS
+git clone https://github.com/MomoiroAkachan/eform.git
+cd eform
+git checkout develop
+cp .env.example .env
 
+# ALTERAR OS NOMES DAS VARIAVEIS
+
+sail up -d --build
+sail artisan key:generate
+sail artisan migrate
+# Selecione 'YES'
+sail npm install
+sail npm run build
+sail npm install --production
+sail composer install --no-dev --optimize-autoloader
+```
