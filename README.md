@@ -30,28 +30,32 @@ de `APP_DEBUG=true` para `APP_DEBUG=false`
 
 ## Processo a partir do sail
 1 - Iniciar o container DOCKER usando o sail:  
-    `sail up -d --build`
+    `./vendor/bin/sail up -d --build`
 
 2 - Gera uma nova chave de API:  
-    `sail artisan key:generate`
+    `./vendor/bin/sail artisan key:generate`
 
 3 - Roda os migrations do banco de dados (vazio por enquanto):  
-    `sail artisan migrate`  
+    `./vendor/bin/sail artisan migrate`  
     Selecione a opção: 'yes'
     
 4 - Instala os pacotes node e Constrói os arquivos de estilos e js:  
-    `sail npm install`
+    `./vendor/bin/sail npm install`
     
 5 - Compila os estilos com o vite  
-    `sail npm run build`
+    `./vendor/bin/sail npm run build`
 
 6 - Instalar pacotes provenientes do npm/node (para produção):  
-    `sail npm install --production`
+    `./vendor/bin/sail npm install --production`
 
 7 - Instalar pacotes provenientes do composer (para produção):  
-    `sail composer install --no-dev --optimize-autoloader`
+    `./vendor/bin/sail composer install --no-dev --optimize-autoloader`
 
 8 - **SEJA FELIZ**
+
+## Instala o Sail:  
+1 - `php artisan sail:install`  
+2 - `php artisan sail:publish`
 
 ## **Resumo Dos Comandos**
 ```
