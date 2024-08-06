@@ -6,23 +6,21 @@
 }
 
 body{
-    @apply box-content;
+    @apply box-content min-w-[600px];
 }
 
 .bg{
     @apply w-full h-full bg-amber-100 fixed overflow-auto;
-    /*background-image: url('/resources/img/bg_coming.jpg');*/
     background-color: rgb(204, 245, 255);
-    background-repeat: repeat;
-    backdrop-filter: saturate(10%);
-    background-size: contain;
 }
 .context {
-    @apply  w-full relative flex flex-col items-center justify-start max-w-[90%] mx-auto h-[79%] box-content lg:max-w-[65%];
+    @apply  w-full pt-[10%] lg:pt-[5%] relative flex flex-col gap-[5%] items-center justify-start max-w-[90%] mx-auto h-[79%] box-content lg:max-w-[65%];
 }
+
 .title{
-    @apply w-fit h-fit text-justify leading-none mt-[15%] md:mt-[8%] mb-[3rem];
+    @apply w-fit text-justify leading-none max-h-[20%];
 }
+
 .title > h1:nth-of-type(1)
 {
     @apply text-[3.2rem] md:text-[5rem] uppercase font-extrabold leading-none tracking-widest;
@@ -44,7 +42,7 @@ body{
     font-family: "Rawline", Arial, Helvetica, sans-serif;
 }
 .infos{
-    @apply relative mt-[25%] md:mt-[8%] max-w-[80%] mx-auto max-h-[40%];
+    @apply absolute top-[50%] max-w-[80%] mx-auto max-h-[15%];
 }
 .ratio{
     @apply  text-[1rem] md:text-[1.5rem] py-0.5 md:py-1 md:px-5 bg-[#ffe342] px-2 absolute left-1/2 -translate-x-1/2 shadow-md w-full rounded-full z-[100] max-w-[95%] md:-top-5 -top-2 text-[#1d1d1d] text-center font-semibold;
@@ -53,19 +51,16 @@ body{
     @apply text-[1rem] md:text-[1.5rem] shadow-lg border pt-[10%] border-gray-300 bg-white md:px-8 px-5 z-[10] relative py-7 rounded-md text-center;
 }
 
+.rzt{
+    @apply max-w-[45%] mx-auto flex flex-col items-center justify-center mt-[8%] h-fit absolute bottom-0;
+}
+
 .footer{
-    @apply w-full h-[21%] bottom-0 mt-auto flex flex-row justify-between;
-    /*background-image: url('/resources/img/pencil_footer.png');*/
-    /*background-repeat: repeat-x;*/
-    /*background-position: top left;*/
-    /*background-clip: content-box;*/
-    /*background-origin: padding-box;*/
-    /*background-size: auto 100%;*/
+    @apply absolute overflow-hidden w-full h-[10%] md:h-[13%] xl:h-[25%] bottom-0 mt-auto flex flex-row justify-between gap-[10%];
 }
 .footer img:nth-of-type(2){
     scale: -1 1;
 }
 .footer img{
-    max-width: 50%;
-    
+    @apply h-full w-auto max-w-[40%];
 }
