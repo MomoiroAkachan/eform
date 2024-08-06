@@ -29,7 +29,7 @@ de `APP_DEBUG=true` para `APP_DEBUG=false`
 4 - Instala os pacotes node e Constrói os arquivos de estilos e js:  
     `sail npm install`
     
-5 - Compila os estilos com o vite
+5 - Compila os estilos com o vite  
     `sail npm run build`
 
 6 - Instalar pacotes provenientes do npm/node (para produção):  
