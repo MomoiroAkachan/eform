@@ -1,11 +1,16 @@
 # Guia
 
 ## Processo a partir do github
-1 - Clone o repositório: `git clone git@github.com:MomoiroAkachan/eform.git`  
-2 - Mude para a branch de desenvolvimento: `git checkout develop`  
+1 - Clone o repositório:  
+    `git clone https://github.com/MomoiroAkachan/eform.git` ou `git clone git@github.com:MomoiroAkachan/eform.git`  
+2 - Avance para a pasta que acabou de clonar:  
+    `cd eform`  
+2 - Mude para a branch de desenvolvimento:  
+    `git checkout develop`  
 
 ## Processo a partir do Sistema operacional
-1 - Fazer uma cópia do arquivo `.env.example` como `.env` (o arquivo de exemplo contém o modelo dos dados padrão): `cp .env.example .env`  
+1 - Fazer uma cópia do arquivo `.env.example` como `.env` (o arquivo de exemplo contém o modelo dos dados padrão):  
+`cp .env.example .env`  
 
 2 - Alterar as variáveis do site no arquivo `.env`:  
 de `APP_ENV=local` para `APP_ENV=production`  
@@ -24,7 +29,8 @@ de `APP_DEBUG=true` para `APP_DEBUG=false`
     `sail artisan key:generate`
 
 3 - Roda os migrations do banco de dados (vazio por enquanto):  
-    `sail artisan migrate`
+    `sail artisan migrate`  
+    Selecione a opção: 'yes'
     
 4 - Instala os pacotes node e Constrói os arquivos de estilos e js:  
     `sail npm install`
@@ -39,3 +45,6 @@ de `APP_DEBUG=true` para `APP_DEBUG=false`
     `sail composer install --no-dev --optimize-autoloader`
 
 8 - **SEJA FELIZ**
+
+## **Resumo Dos Comandos**
+
