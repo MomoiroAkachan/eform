@@ -6,7 +6,7 @@
     <div class="page-bg">
         <div class="card">
             <form action="#" method="post"
-                class='w-full flex flex-col gap-7 h-full bg-transparent border-red-600 p-4 overflow-y-auto'>
+                  class='w-full flex flex-col gap-7 h-full bg-transparent border-red-600 p-4 overflow-y-auto'>
                 @csrf
 
                 {{-- Título do formulário --}}
@@ -27,7 +27,7 @@
                     <span class="title">Responsável 1</span>
                     <x-hinput id='iResName' placeholder='Nome completo' type='text' rgx='^[a-zä-üá-úà-ù\s]*$' />
                     <x-hinput id='iRelLevel' placeholder='Grau de Parentesco' type='datalist' rgx='^.*$'
-                        :liop="['Firefox', 'Chrome', 'Opera', 'Safari']" />
+                              :liop="['Firefox', 'Chrome', 'Opera', 'Safari']" />
                     <x-hinput id='iResRG' placeholder='Número do RG' type='text' rgx='[a-zA-Z\s]+$' />
                     <x-hinput id='iResCPF' placeholder='CPF' type='text' class='w-full' rgx='[a-zA-Z\s]+$' />
                     <x-hinput id='iResWork' placeholder='Profissão' type='datalist' :liop="['Firefox', 'Chrome', 'Opera', 'Safari']" rgx='[a-zA-Z\s]+$' />
@@ -45,7 +45,7 @@
                     <span class="title">Responsável 2</span>
                     <x-hinput id='iResName2' placeholder='Nome completo' type='text' rgx='[a-zA-Z\s]+$' kind='unholy' />
                     <x-hinput id='iRelLevel2' placeholder='Grau de Parentesco' type='datalist' rgx='[a-zA-Z\s]+$' kind='unholy'
-                        :liop="['Firefox', 'Chrome', 'Opera', 'Safari']" />
+                              :liop="['Firefox', 'Chrome', 'Opera', 'Safari']" />
                     <x-hinput id='iResRG2' placeholder='Número do RG' type='text' rgx='[a-zA-Z\s]+$' kind='unholy' />
                     <x-hinput id='iResCPF2' placeholder='CPF' type='text' class='w-full' rgx='[a-zA-Z\s]+$' kind='unholy' />
                     <x-hinput id='iResWork2' placeholder='Profissão' type='datalist' :liop="['Firefox', 'Chrome', 'Opera', 'Safari']" rgx='[a-zA-Z\s]+$' kind='unholy' />
