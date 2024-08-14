@@ -3,5 +3,5 @@
 @section('title', 'Início')
 
 @section('content')
-    <a href="{{ route('form.index') }}" class='e-link'>ir para o formulário</a>
+    
 @endsection

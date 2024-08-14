@@ -7,7 +7,11 @@ use Illuminate\View\View;
 
 class FormController extends Controller
 {
-    public function index(): View{
-        return view('form.index');
+    public function page($page){
+        return $page;
+    }
+
+    public function index(){
+        return 'Press to start';
     }
 }
